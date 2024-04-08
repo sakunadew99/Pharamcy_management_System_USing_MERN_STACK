@@ -9,7 +9,7 @@ const router = require('./router');
 app.use(cors());
 app.use(express.json());
 
-const port = process.env.PORT || 3012;
+const port = process.env.PORT || 3033;
 const host = process.env.HOST || 'localhost';
 
 
