@@ -1,0 +1,31 @@
+/* Table.css */
+
+.table-container {
+    margin: 0 auto;
+    grid-area: main;
+    overflow-y: auto;
+    min-width: 80%;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+
+  
+  .user-table tr:hover {
+    background-color: #81bee2;
+    color: rgb(31, 30, 30);
+  }
+  
