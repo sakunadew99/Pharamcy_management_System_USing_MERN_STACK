@@ -15,7 +15,7 @@ const host = process.env.HOST || 'localhost';
 
 const mongoose = require('mongoose');
 
-const mongoUri =  'mongodb+srv://root:root@books-store-mern.pl4k5pa.mongodb.net/?retryWrites=true&w=majority&appName=Books-Store-MERN';
+const mongoUri =  'mongodb+srv://root:root@books-store-mern.pl4k5pa.mongodb.net/USers-collection?retryWrites=true&w=majority&appName=Books-Store-MERN';
 
 const connect = async () => {
     try{

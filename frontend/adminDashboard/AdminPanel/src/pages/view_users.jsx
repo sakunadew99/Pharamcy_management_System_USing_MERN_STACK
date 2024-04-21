@@ -13,7 +13,7 @@ function view_users() {
 
   const getUsers = async () => {
     try {
-      const response = await Axios.get('http://localhost:3012/api/users');
+      const response = await Axios.get('http://localhost:3033/api/users');
       setUsers(response.data);
       console.log(response.data);
     } catch (error) {
@@ -32,14 +32,16 @@ function view_users() {
             <th>Date of Birth:</th>
             <th>Mobile Number:</th>
             <th>Email Address:</th>
-            <th>Username:</th>
+            <th>User Name:</th>
+            
             
           </tr>
         </thead>
         <tbody>
           {users.map(user => (
-            <tr key={user.id}>
+            <tr key={user._id}>
               <td>{user.userRole}</td>
+              <td>{user.name}</td>
               <td>{user.DateOfBirth}</td>
               <td>{user.mobile}</td>
               <td>{user.email}</td>
